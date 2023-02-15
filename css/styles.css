@@ -2,7 +2,7 @@
   --color-primary: #434455;
   --color-primary-dark: #2e2f42;
   --clr-primary-inverted: #ffffff;
-  --clr-background: #e5e5e5;
+  --clr-background: #ffffff;
   --clr-background-dark: #f4f4fd;
   --color-button-off: #4d5ae5;
   --clr-button-on: #404bbf;
@@ -29,6 +29,7 @@ h2,
 h3,
 h4 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
   margin: 0;
@@ -36,7 +37,7 @@ ul {
   list-style-type: none;
 }
 .page-header {
-  background: var(--clr-primary-inverted);
+  background: var(--clr-background);
   border-bottom: 1px solid var(--color-wiete-foo);
 }
 .header-conteiner {
@@ -67,6 +68,7 @@ ul {
 .page-addres {
   display: flex;
   gap: 40px;
+  font-style: normal;
 }
 .page-addres .link {
   text-decoration: none;
@@ -81,6 +83,10 @@ ul {
 .section {
   padding: 120px 0;
 }
+.non-padding {
+  padding-top: 0px;
+}
+
 .logo-first {
   font-family: var(--font-family-big);
   font-family: "Raleway";
@@ -141,12 +147,12 @@ ul {
 
 .secondary-conteiner {
   display: flex;
-
   gap: 24px;
-  width: 264px;
-  flex-basis: calc((100% / 4));
 }
-.text-strategy {
+.li-sekondary-conteiner {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.text-secondary-conteiner {
   margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--color-primary-dark);
@@ -154,64 +160,21 @@ ul {
   font-size: 20px;
   line-height: 1.2;
 }
-.text-pun {
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-  color: var(--color-primary-dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.text-diligence {
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-  color: var(--color-primary-dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.text-technologies {
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-  color: var(--color-primary-dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.paragraf-strategy {
+.paragraf-text-sekondary {
   width: 264px;
   color: var(--color-primary);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.paragraf-pun {
-  width: 264px;
-  color: var(--color-primary);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.paragraf-diligence {
-  width: 264px;
-  color: var(--color-primary);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.paragraf-technologies {
-  width: 264px;
-  color: var(--color-primary);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
+
 .foto-section {
   display: flex;
   gap: 24px;
 }
+
 .page-waw-doing {
-  margin: 72px;
+  margin-bottom: 72px;
   padding-top: 0;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -220,8 +183,11 @@ ul {
   color: var(--color-primary-dark);
   display: flex;
 }
+.section-background {
+  background: var(--clr-background-dark);
+}
 .team {
-  margin: 72px;
+  margin-bottom: 72px;
   justify-content: center;
   font-weight: 700;
   font-size: 36px;
@@ -233,10 +199,21 @@ ul {
   display: flex;
   gap: 24px;
 }
+
 .team-item {
   flex-basis: calc((100% / 4)-72px);
+
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: 264px;
 }
-.piple-m {
+.foto-team {
+  padding-bottom: 32px;
+}
+.piple {
+  padding-bottom: 8px;
   text-align: center;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -244,53 +221,10 @@ ul {
   line-height: 1.11;
   color: var(--color-primary-dark);
 }
-.piple-t {
-  letter-spacing: 0.02em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.11;
-  color: var(--color-primary-dark);
-}
-.piple-c {
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.11;
-  color: var(--color-primary-dark);
-}
-.piple-d {
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.11;
-  color: var(--color-primary-dark);
-}
+
 /* paragraf  */
-.paragraf-product {
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-primary);
-}
-.paragraf-frontend {
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-primary);
-}
-.paragraf-marketing {
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-primary);
-}
-.paragraf-ui {
+.paragraf {
+  padding-bottom: 32px;
   text-align: center;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -298,6 +232,9 @@ ul {
   color: var(--color-primary);
 }
 
+.footer-mar {
+  margin-bottom: 16px;
+}
 .footer-fon {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -312,14 +249,17 @@ ul {
 }
 
 /* PAGE 2 */
+.section-portfolio {
+  padding-top: 96px;
+}
 .button-portfolio {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 72px;
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 .but-all {
+  padding: 12px 24px;
   letter-spacing: 0.04em;
   font-weight: 500;
   font-size: 16px;
@@ -344,6 +284,7 @@ ul {
   font-family: "Roboto";
 }
 .but-web {
+  padding: 12px 24px;
   letter-spacing: 0.04em;
   font-weight: 500;
   font-size: 16px;
@@ -370,6 +311,7 @@ ul {
   font-family: "Roboto";
 }
 .but-app {
+  padding: 12px 24px;
   letter-spacing: 0.04em;
   background: var(--clr-background-dark);
   font-weight: 500;
@@ -398,6 +340,7 @@ ul {
   font-family: "Roboto";
 }
 .but-desing {
+  padding: 12px 24px;
   letter-spacing: 0.04em;
   color: var(--color-button-off);
   background: var(--clr-background-dark);
@@ -423,6 +366,7 @@ ul {
   font-family: "Roboto";
 }
 .but-marketing {
+  padding: 12px 24px;
   letter-spacing: 0.04em;
   background: var(--clr-background-dark);
   border: 1px solid var(--color-wiete-foo);
@@ -448,20 +392,27 @@ ul {
 }
 .border-text {
   border: 1px solid var(--color-wiete-foo);
+  border-top: none;
   padding-left: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 /* text  */
+.section-foto {
+  padding-bottom: 120px;
+}
 .service-conteiner {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 120px;
+  gap: 48px 24px;
 }
 .name-info {
-  box-sizing: border-box;
   flex-basis: calc((100% - 48px) / 3);
-  display: list-item;
+}
+.foto-portfolio {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .text-name-ban {
   font-weight: 500;
